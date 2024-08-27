@@ -13,6 +13,7 @@ public class keobubao {
 //        1keo
 //        2bua
 //        3bao
+        System.out.println("Tro chs keo bua bao");
         System.out.println("1.Keo");
         System.out.println("2.Bua");
         System.out.println("3.Bao");
