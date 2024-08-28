@@ -13,9 +13,9 @@ public class homework {
         int lost=0;
         int win=0;
         while(lost != 3 && win != 5){
-            int n = rd.nextInt(5);
+            int n = rd.nextInt(4)+2;
             int kq=0;
-            for(int i=1;i<n+2;i++){
+            for(int i=1;i<n;i++){
             int a = rd.nextInt(10)+1;
             kq+=a;
             System.out.print(a + " ");
