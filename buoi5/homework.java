@@ -14,19 +14,19 @@ public class homework {
         while (lost != 3) {
             int n = rd.nextInt(4) + 2;
             int kq = 0;
-            StringBuilder expression = new StringBuilder();
+            StringBuilder xoa = new StringBuilder();
             
             for (int i = 0; i < n; i++) {
                 int a = rd.nextInt(10) + 1;
                 kq += a;
                 if (i == 0) {
-                    expression.append(a); // Không thêm dấu cộng trước số hạng đầu tiên
+                    xoa.append(a); // Không thêm dấu cộng trước số hạng đầu tiên
                 } else {
-                    expression.append(" + ").append(a);
+                    xoa.append(" + ").append(a);
                 }
             }
             
-            System.out.print(expression.toString() + " = ");
+            System.out.print(xoa.toString() + " = ");
             System.out.println("\nNhap KQ phep tinh cong tren: ");
             int b = sc.nextInt();
             if (kq == b) {
@@ -40,9 +40,8 @@ public class homework {
             System.out.println("Ban co so diem la: " + win + " Va so cau sai: " + lost);
         }
         if (lost == 3) {
-            System.out.println("Ban Lose. Rat that vong");
+           System.out.println("Ban Lose. Rat that vong");
         }
         System.out.println("Tro chs ket thuc.");
-        sc.close();
     }
 }
