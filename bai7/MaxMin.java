@@ -6,6 +6,7 @@ public class MaxMin {
 
     public static void max(int[] n) {
         int max = 0;
+        max=n[0];
         for (int i = 0; i < n.length; i++) {
             if (n[i] > max) {
                 max = n[i];
