@@ -58,7 +58,7 @@ public class StudentList {
             return false;
         }
     }
-
+    
     public Student DeleteStudentByID() {
         System.out.println("Nhap ID can xoa: ");
         String ID = sc.nextLine();
@@ -77,7 +77,7 @@ public class StudentList {
         }
     }
 
-    public void FindHighestGPA() {
+     Student FindHighestGPA() {
         Student top = studentList.get(0);
         for (Student a : studentList) {
 
@@ -86,6 +86,7 @@ public class StudentList {
             }
         }
         top.displayInfo();
+        return null;
     }
 
 }
