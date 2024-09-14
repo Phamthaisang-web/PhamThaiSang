@@ -24,7 +24,7 @@ public class StudentList {
         return null;
     }
 
-    public boolean updateStudentByID(String ID) {
+   public void updateStudentByID(String ID) {
         Student student = findStudentByID(ID);
         if (student != null) {
 
@@ -52,10 +52,10 @@ public class StudentList {
             String major = sc.nextLine();
             student.setMajor(major);
 
-            return true;
+            
         } else {
             System.out.println("Khong tim thay ID:  " + ID);
-            return false;
+            
         }
     }
     
