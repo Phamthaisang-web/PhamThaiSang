@@ -74,6 +74,4 @@ public class Student extends Person {
         System.out.println("Major: "+getMajor());
     }
 
-    
-
 }
