@@ -59,16 +59,16 @@ public class StudentList {
         }
     }
     
-    public Student DeleteStudentByID() {
+    public void DeleteStudentByID() {
         System.out.println("Nhap ID can xoa: ");
         String ID = sc.nextLine();
         for (Student student : studentList) {
             if (student.getId().equals(ID)) {
                 studentList.remove(student);
-                return student;
+                
             }
         }
-        return null;
+      
     }
 
     public void displayAllStudents() {
